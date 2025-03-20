@@ -28,35 +28,40 @@ export class NavMenu extends Component {
                     <NavbarBrand tag={Link} to="/">BloodBankManagmemntSystem</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-                        <ul className="navbar-nav flex-grow">
+                        <ul className="navbar-nav ml-auto">
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
+                                <NavLink tag={Link} className="text-white" to="/">Home</NavLink>
                             </NavItem>
-                            <div class="LoginDropdown">
-                            User Login
-                                <div class="DropdownContent">
-                                    <NavItem>
-                                        <NavLink tag={Link} className="text-dark" to="/donor-login">Donor Login</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink tag={Link} className="text-dark" to="/employee-login">Employee Login</NavLink>
-                                    </NavItem>
-                                </div>
-                            </div>
-                            <div class="RegisterDropdown">
-                            User Register
-                                <div class="DropdownContent">
-                                <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/register-donor">Register Donor</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/register-employee">Register Employee</NavLink>
-                                </NavItem>
-                                </div>
-                            </div>
 
-                           
+                            <li className="nav-item dropdown">
+                                <div className="LoginDropdown">
+                                    <span className="nav-link text-white">User Login</span>
+                                    <div className="DropdownContent">
+                                        <NavItem>
+                                            <NavLink tag={Link} className="text-white" to="/donor-login">Donor Login</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink tag={Link} className="text-white" to="/employee-login">Employee Login</NavLink>
+                                        </NavItem>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <div className="RegisterDropdown">
+                                    <span className="nav-link text-white">User Register</span>
+                                    <div className="DropdownContent">
+                                        <NavItem>
+                                            <NavLink tag={Link} className="text-white" to="/register-donor">Register Donor</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink tag={Link} className="text-white" to="/register-employee">Register Employee</NavLink>
+                                        </NavItem>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
+
+
                     </Collapse>
                 </Navbar>
             </header>

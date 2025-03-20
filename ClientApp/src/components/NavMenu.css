@@ -36,3 +36,100 @@ html {
 .LoginDropdown:hover .DropdownContent, .RegisterDropdown:hover .DropdownContent {
     display: block;
 }
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #343a40; /* Dark background for header */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background */
+    border-bottom: 2px solid #6c757d; /* Light border */
+}
+
+.navbar-brand {
+    color: #ff7f50; /* Coral for brand */
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+    .navbar-brand:hover {
+        color: #ffd700; /* Gold on hover */
+    }
+
+.navbar-toggler {
+    border-color: #ff7f50; /* Coral for toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #ff7f50; /* Coral color for hamburger icon */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #ff7f50; /* Coral hover color */
+        background-color: #444; /* Dark background on hover */
+    }
+
+/* Dropdown menu container */
+.LoginDropdown, .RegisterDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+    .LoginDropdown:hover .DropdownContent, .RegisterDropdown:hover .DropdownContent {
+        display: block;
+    }
+
+/* Dropdown content */
+.DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+    /* Dropdown links */
+    .DropdownContent .nav-item .nav-link {
+        color: #ffffff;
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+        .DropdownContent .nav-item .nav-link:hover {
+            color: #ffd700; /* Gold on hover for dropdown links */
+            background-color: #444;
+        }
+
+/* Media Query for Responsive Design */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+        .navbar-nav .nav-item {
+            margin: 5px 0;
+        }
+}
